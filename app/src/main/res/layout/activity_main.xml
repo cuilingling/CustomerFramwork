@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.facebook.myapplication.MainActivity">
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/banner_guide_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:banner_pageChangeDuration="1000"
+        app:banner_pointAutoPlayAble="false"
+        app:banner_pointContainerBackground="@android:color/transparent"
+        app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+        app:banner_pointTopBottomMargin="15dp"
+        app:banner_transitionEffect="alpha" />
+
+    <TextView
+        android:id="@+id/textViewHomePackage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/numInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btnSetBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Set badge" />
+
+    <Button
+        android:id="@+id/btnSetBadgeByNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Launch Notification" />
+
+    <Button
+        android:id="@+id/btnRemoveBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Remove badge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/redpointstyle"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:id="@+id/iv_home"
+                style="@style/homeactivity_bottom_1"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                style="@style/homeactivity_bottom_tv1"
+                android:layout_below="@+id/iv_home"
+                android:text="首页" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/redpointstyle"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:id="@+id/iv_order"
+                style="@style/homeactivity_bottom_1"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                style="@style/homeactivity_bottom_tv1"
+                android:layout_below="@+id/iv_order"
+                android:text="订单" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/redpointstyle"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:id="@+id/iv_frend"
+                style="@style/homeactivity_bottom_1"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                style="@style/homeactivity_bottom_tv1"
+                android:layout_below="@+id/iv_frend"
+                android:text="朋友" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/redpointstyle"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+
+            <ImageView
+                android:id="@+id/iv_setting"
+                style="@style/homeactivity_bottom_1"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                style="@style/homeactivity_bottom_tv1"
+                android:layout_below="@+id/iv_setting"
+                android:text="设置" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
